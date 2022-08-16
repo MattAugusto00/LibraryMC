@@ -26,5 +26,5 @@ Este projeto é sobre um sistema de controle bibliotecário. Nesse sistema podem
 <h3>4.Relatório dos livros</h3>
 ...
 <h3>5.Perfil</h3>
-
+...
 <h2>Linguagens utilizadas: </h2><p>HTML5, CSS3, PHP e MySQL</p>
