@@ -4,9 +4,9 @@ Este projeto é sobre um sistema de controle bibliotecário. Nesse sistema podem
 <h3>1.Meus Dados</h3>
 Nessa página será possível vizualizar, alterar e excluir os dados do perfil.
 <h3>2.Cadastrar Livro</h3>
-...
+Nessa página será possível cadastrar um novo livro no sistema.
 <h3>3.Listar Livros</h3>
-...
+Nessa página será possível visualizar todos os livros disponíveis no sistema.
 <h3>4.Realizar Empréstimo</h3>
 ...
 <h3>5.Realizar Devolução</h3>
