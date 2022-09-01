@@ -18,9 +18,9 @@ Será a página inicial/principal do funcionário.
 
 <h2>Serão 3 páginas para o estudante:</h2>
 <h3>1.Meus Dados</h3>
-...
+Nessa página será possível visualizar, alterar e excluir os dados do perfil.
 <h3>2.Listar Livros</h3>
-...
+Nessa página será possível visualizar todos os livros disponíveis no sistema.
 <h3>3.Página Principal</h3>
-...
+Será a página inicial/principal do funcionário.
 <h2>Linguagens utilizadas: </h2><p>HTML5, CSS3, PHP e MySQL</p>
