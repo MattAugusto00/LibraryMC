@@ -12,7 +12,7 @@ Nessa página será possível registrar o empréstimo de um livro na base de dad
 <h3>5.Realizar Devolução</h3>
 Nessa página será possível registrar a devolução de um livro na base de dados do sistema.
 <h3>6.Gerar Relatório de Empréstimo</h3>
-Nessa página o sistema mostrará uma lista de emprestimos e devoluções em um único dia.
+Nessa página o sistema mostrará uma lista de empréstimos e devoluções em um único dia.
 <h3>7.Página Principal</h3>
 Será a página inicial/principal do funcionário.
 
