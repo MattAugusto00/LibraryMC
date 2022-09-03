@@ -1,1 +1,3 @@
+Para todo Model teremos um DAO(Data Access Object). Toda operação feita no banco de dados terá uma classe especifica para conectar o banco de dados e salvar. As operações de CADASTRAR, ALTERAR, EXCLUIR estarão efetivamente dentro do DAO.
 
+Ex: ClienteDAO, VendaDAO, FornecedorDAO
