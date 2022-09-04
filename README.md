@@ -35,8 +35,8 @@ Ex: C_CadastroCliente.php, C_ConsultarCliente.php, etc...
 Tudo que estiver relacionado a interface. Por exemplo, o formulário que o cliente interagir estará nesta pasta.
 Ex: CadastroCliente.html, ConsultarCliente.html, etc..
 <h4>Model</h4>
-São as classes representadas. Dentro do model posso falar quais são os atributos, métodos, etc...
+Representação das classes. Dentro do model definimos quais são os atributos, métodos, etc...
 Ex: Cliente.php, Venda.php, Fornecedor.php, etc..
 <h4>Persistence</h4>
-Está relacionado a persistencia dos dados. Para todo Model teremos um DAO(Data Access Object). Toda operação feita no banco de dados terá uma classe especifica para conectar o banco de dados e salvar. As operações de CADASTRAR, ALTERAR, EXCLUIR estarão efetivamente dentro do DAO.
+Persistencia dos dados. Para todo Model teremos um DAO(Data Access Object). Toda operação feita no banco de dados terá uma classe especifica para conectar o banco de dados e salvar. As operações de CADASTRAR, ALTERAR, EXCLUIR estarão efetivamente dentro do DAO.
 Ex: ClienteDAO, VendaDAO, FornecedorDAO
