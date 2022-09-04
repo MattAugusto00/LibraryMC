@@ -24,5 +24,3 @@ Nessa página será possível visualizar todos os livros disponíveis no sistema
 <h3>3.Página Principal</h3>
 Será a página inicial/principal do funcionário.
 <h2>Linguagens utilizadas: </h2><p>HTML5, CSS3, PHP e MySQL</p>
-<h2>Diagrama de Classes</h2>
-https://lucid.app/lucidchart/f6ead533-477b-445b-b4c8-6e0833f6ed79/edit?page=HWEp-vi-RSFO&invitationId=inv_a61b83f9-c916-449d-9623-5addbb6c8679#
