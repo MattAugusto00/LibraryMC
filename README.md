@@ -24,3 +24,13 @@ Nessa página será possível visualizar todos os livros disponíveis no sistema
 <h3>3.Página Principal</h3>
 Será a página inicial/principal do funcionário.
 <h2>Linguagens utilizadas: </h2><p>HTML5, CSS3, PHP e MySQL</p>
+
+<h2>Código</h2>
+<h3>Pastas</h3>
+<h4>Controller</h4>
+Código responsável por receber os dados que vem do formulário e decidir a partir do formulário como ele irá controlar a sequencia dos métodos que serão chamados.
+Ex: C_CadastroCliente.php, C_ConsultarCliente.php, etc...
+("C_" = Padrão para representar Controller)
+<h4>View</h4>
+<h4>Model</h4>
+<h4>Persistence</h4>
