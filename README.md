@@ -23,7 +23,7 @@ Nessa página será possível visualizar, alterar e excluir os dados do perfil.
 Nessa página será possível visualizar todos os livros disponíveis no sistema.
 <h3>3.Página Principal</h3>
 Será a página inicial/principal do funcionário.
-<h2>Linguagens utilizadas: </h2><p>HTML5, CSS3, PHP e MySQL</p>
+<h2>Linguagens utilizadas: </h2><p>HTML5, CSS3, PHP7.4.26 e MySQL5.7.36</p>
 
 <h2>Código</h2>
 <h3>Pastas</h3>
