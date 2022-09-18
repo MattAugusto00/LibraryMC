@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Login</title>
+  <link rel="stylesheet" href="../css/login.css">
+</head>
+<body>
+  <!--Cabeçalho-->
+  <header>.</header>
+
+  <!--Seçao nao tava descendo por motivos que nao sei, logo criei para deixar a seçao no meio da pagina rsrs-->
+  <div class="moveSecao">
+    <!--Dentro da section terao 2 Divisoes. A primeira para o formulario do Estudante, a segunda para o formulario do Funcionario-->
+    <!--Coloquei as 2 divisoes dentro da mesma section para facilitar no alinhamento delas com uso do flexbox no CSS-->
+    <section class="secaoLogin">
+      <!--Primeira divisao(Estudante)-->
+      <div class="estudante">
+        <!--Titulo da divisao-->
+        <h1>Login Estudante</h1>
+        <!--Formulario do Estudante-->
+        <form class="formulario" method="post" action="">
+          <p>
+            <input id="nomeUsuario" name="nomeUsuario" required="required" type="text" placeholder="Nome de usuário"/>
+          </p>
+          <p>
+            <input id="senha" name="senha" required="required" type="password" placeholder="Senha"/>
+          </p>
+          <p class="esqueciMinhaSenha">
+            <a href="esqueciMinhaSenha">ESQUECI MINHA SENHA</a>
+          </p>
+          <p>
+            <!--Botao de Entrar como Estudante-->
+            <input id="botaoEntrar" type="submit" value="Entrar" /> 
+          </p>
+          <p class="registrarSe">
+            <a href="cadastrarSe">Registrar-se</a>
+          </p>
+        </form>
+      </div>
+      <!--Segunda Divisão(Funcionario)-->
+      <div class="funcionario">
+        <!--Titulo da divisao-->
+        <h1>Login Funcionário</h1>
+        <!--Formulario do Funcionario-->
+        <form class="formulario" method="post" action="">
+          <p>
+            <input id="nomeUsuario" name="nomeUsuario" required="required" type="text" placeholder="Nome de usuário"/>
+          </p>
+          <p>
+            <input id="senha" name="senha" required="required" type="password" placeholder="Senha"/>
+          </p>
+          <p class="esqueciMinhaSenha">
+            <a href="esqueciMinhaSenha">ESQUECI MINHA SENHA</a>
+          </p>
+          <p>
+            <!--Botao de Entrar como Funcionario-->
+            <input id="botaoEntrar" type="submit" value="Entrar" />
+          </p>
+          <p class="registrarSe">
+            <a href="cadastrarSe">Registrar-se</a>
+          </p>
+        </form>
+      </div>
+    </section>
+  </div>
+
+  <!--Rodapé da pagina-->
+  <footer>.</footer>
+</body>
+</html>
