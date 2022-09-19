@@ -1,7 +1,11 @@
 {
   "ExpandedNodes": [
-    ""
+    "",
+    "\\Código",
+    "\\Código\\Controller",
+    "\\Código\\Model",
+    "\\Código\\Persistence"
   ],
-  "SelectedNode": "\\C:\\xampp\\htdocs\\library",
+  "SelectedNode": "\\Código\\Persistence\\LivroDAO.php",
   "PreviewInSolutionExplorer": false
 }
