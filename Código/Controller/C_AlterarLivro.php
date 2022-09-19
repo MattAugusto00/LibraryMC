@@ -24,10 +24,10 @@ $livroDAO->consultaCod($conn, $cod);
   <link rel="stylesheet" href="../View/css/alterarLivro.css">
 </head>
 <body>
-  <!--CabeÁalho-->
+  <!--Cabe√ßalho-->
   <header>.</header>
 
-  <!--SeÁao nao tava descendo por motivos que nao sei, logo criei para deixar a seÁao no meio da pagina rsrs-->
+  <!--Se√ßao nao tava descendo por motivos que nao sei, logo criei para deixar a se√ßao no meio da pagina rsrs-->
   <div class="moveSecao">
     <!--Dentro da section terao 2 Divisoes. A primeira para o formulario do Estudante, a segunda para o formulario do Funcionario-->
     <!--Coloquei as 2 divisoes dentro da mesma section para facilitar no alinhamento delas com uso do flexbox no CSS-->
@@ -35,22 +35,22 @@ $livroDAO->consultaCod($conn, $cod);
       <!--Primeira divisao(Estudante)-->
       <div class="welcome">
         <!--Titulo da divisao-->
-        <h1>P·gina do Funcion·rio</h1>
-        <!--Segunda Divis„o(Funcionario)-->
+        <h1>P√°gina do Funcion√°rio</h1>
+        <!--Segunda Divis√£o(Funcionario)-->
         <div class="opcoes">
             <a href="1"><div>Meus Dados</div></a>
             <a href="2"><div>Cadastrar Livro</div></a>
             <a href="3"><div>Listar Livros</div></a>
-            <a href="4"><div>Realizar EmprÈstimo</div></a>
-            <a href="5"><div>Realizar DevoluÁ„o</div></a>
-            <a href="6"><div>Gerar relatÛrio de EmprÈstimo</div></a>
+            <a href="4"><div>Realizar Empr√©stimo</div></a>
+            <a href="5"><div>Realizar Devolu√ß√£o</div></a>
+            <a href="6"><div>Gerar relat√≥rio de Empr√©stimo</div></a>
         </div>
       </div>
       <div class="opcaoEscolhida">
         <h1>Alterar Livro</h1>
         <form class="formulario" method="post" action="../../Controller/cadastrarLivro.php">
           <p>
-            <input id="titulo" name="titulo" required="required" type="text" placeholder="TÌtulo do livro"/>
+            <input id="titulo" name="titulo" required="required" type="text" placeholder="T√≠tulo do livro"/>
           </p>
           <p>
             <input id="autor" name="autor" required="required" type="text" placeholder="Autor"/>
@@ -62,13 +62,13 @@ $livroDAO->consultaCod($conn, $cod);
             <input id="ano" name="ano" required="required" type="text" placeholder="Ano"/>
           </p>
           <p>
-            <input id="genero" name="genero" required="required" type="text" placeholder="GÍnero"/>
+            <input id="genero" name="genero" required="required" type="text" placeholder="G√™nero"/>
           </p>
 
           <!--Div criada para usar o flex e deixar os botoes alterar e excluir lado a lado-->
           <div class="botoes">
             <p>
-              <!--Botao de AlteraÁ„o de dados do perfil-->
+              <!--Botao de Altera√ß√£o de dados do perfil-->
               <input id="alterarLivro" type="submit" value="Alterar Livro" /> 
             </p>
           </div>
@@ -77,7 +77,7 @@ $livroDAO->consultaCod($conn, $cod);
     </section>
   </div>
 
-  <!--RodapÈ da pagina-->
+  <!--Rodap√© da pagina-->
   <footer>.</footer>
 </body>
 </html>
