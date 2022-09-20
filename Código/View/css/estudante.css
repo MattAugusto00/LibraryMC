@@ -1,0 +1,75 @@
+/*Estilização com CSS3*/
+
+/*Pagina inteira com 0 de margem*/
+*{
+  padding: 0;
+  margin: 0;
+}
+
+/*Corpo da pagina inteira colorido pela cor especificada abaixo*/
+body{
+  background-color: #0066FF;
+}
+
+/*Cabeçalho*/
+header{
+  /*Cor de fundo*/
+  background-color: #211F1F;
+  /*Fixed e 100% pois é o jeito que encontrei para que o header nao diminuisse quando reduzisse o tamanho da tela*/
+  position: fixed;
+  width: 100%;
+  /*fixado no pixel 0 da página*/
+  top: 0px;
+}
+
+footer{
+  background-color: #211F1F;
+  position: fixed;
+  width: 100%;
+  bottom: 0px;
+}
+
+a{
+  text-decoration: none;
+  color: white;
+}
+
+.secaoLogin{
+  width: 1500px;
+  height: 500px;
+  margin-top: 100px;
+  margin-left: 17px;
+  display: flex;
+}
+
+.secaoLogin .welcome{
+  background-color: #211F1F;
+  width: 490px;
+}
+
+.secaoLogin .welcome h1{
+  color: white;
+  display: grid;
+  margin-top: 20px;
+  justify-content: center;
+}
+
+.secaoLogin .opcoes{
+  background-color: #211F1F;
+  width: 1000px;
+  margin-left: 10px;
+}
+
+.secaoLogin .opcoes .linha{
+  display: flex;
+  margin-top: 20px;
+}
+
+.secaoLogin .opcoes .linha a{
+  background-color: #393232;
+  width: 150px;
+  height: 80px;
+  margin-left: 20px;
+  display: grid;
+  justify-content: center;
+}
