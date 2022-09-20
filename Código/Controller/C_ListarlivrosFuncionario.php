@@ -26,7 +26,7 @@ $res = $livroDAO->consultar($conn);
     <!--Cabeçalho-->
     <header>.</header>
 
-    <!--Se�ao nao tava descendo por motivos que nao sei, logo criei para deixar a se�ao no meio da pagina rsrs-->
+    <!--Seçao nao tava descendo por motivos que nao sei, logo criei para deixar a seçao no meio da pagina rsrs-->
     <div class="moveSecao">
         <!--Dentro da section terao 2 Divisoes. A primeira para o formulario do Estudante, a segunda para o formulario do Funcionario-->
         <!--Coloquei as 2 divisoes dentro da mesma section para facilitar no alinhamento delas com uso do flexbox no CSS-->
@@ -90,7 +90,7 @@ $res = $livroDAO->consultar($conn);
         </section>
     </div>
 
-    <!--Rodap� da pagina-->
+    <!--Rodapé da pagina-->
     <footer>.</footer>
 </body>
 </html>
