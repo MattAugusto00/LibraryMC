@@ -30,13 +30,30 @@ class LivroDAO {
     }
 
     function consultaCod($conn, $cod){
-        $sql = "SELECT * FROM `livro` WHERE `cod` = ";
-        echo $sql;
+        $sql = "SELECT * FROM `livro` WHERE `id` = ".$cod;
+
+        $res = $conn->query($sql);
+        return $res;
     }
 
-    //function alterar($conn, $cod){
-    //    $consulta = "UPDATE `livro` SET `autor` = 'Luiz Andrade' WHERE `livro`.`id` = 2;"
-    //}
+    function alterar($conn, $id, $livro){
+        $sql = "UPDATE `livro` SET `titulo` = '".$livro->getTitulo()."',".
+                                  "`autor` = '".$livro->getAutor()."',".
+                                  "`editora` = '".$livro->getEditora()."',".
+                                  "`ano` = '".$livro->getAno()."',".
+                                  "`genero` = '".$livro->getGenero()."'".
+                                  "WHERE `id` =".$id;
+
+        if ($conn->query($sql) == TRUE){
+            echo "<script>alert('Dados alterados com sucesso!!!');
+                 location.href='C_listarLivrosFuncionario.php' </script>";
+        }
+
+        else {
+            echo "<script>alert('Erro na alteração!!!');
+                 location.href='C_dadosLivro.php' </script>";
+        }
+    }
 }
 
 ?>
