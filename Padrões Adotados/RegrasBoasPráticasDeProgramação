@@ -1,0 +1,7 @@
+1.Identar o código com espaço tamanho 2.
+2.Nomear variáveis e variaveis de maneira intuitiva.
+3.Evitar comentarios
+4.Usar camel-case em nomes de variaveis e funções com nome composto.
+5.Adotar padrão de notação de código
+6.Escreva sempre chaves nos comandos de controle(if/else, while, for, etc),
+mesmo que não seja obrigatório.
