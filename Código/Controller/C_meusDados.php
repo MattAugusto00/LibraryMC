@@ -19,10 +19,10 @@ $conn = $conn->getConnection();
   <link rel="stylesheet" href="../css/meusDadosEstudante.css">
 </head>
 <body>
-  <!--Cabe�alho-->
+  <!--Cabeçalho-->
   <header>.</header>
 
-  <!--Se�ao nao tava descendo por motivos que nao sei, logo criei para deixar a se�ao no meio da pagina rsrs-->
+  <!--Seçao nao tava descendo por motivos que nao sei, logo criei para deixar a seçao no meio da pagina rsrs-->
   <div class="moveSecao">
     <!--Dentro da section terao 2 Divisoes. A primeira para o formulario do Estudante, a segunda para o formulario do Funcionario-->
     <!--Coloquei as 2 divisoes dentro da mesma section para facilitar no alinhamento delas com uso do flexbox no CSS-->
@@ -30,8 +30,8 @@ $conn = $conn->getConnection();
       <!--Primeira divisao(Estudante)-->
       <div class="welcome">
         <!--Titulo da divisao-->
-        <h1>P�gina do Estudante</h1>
-        <!--Segunda Divis�o(Funcionario)-->
+        <h1>Página do Estudante</h1>
+        <!--Segunda Divisão(Funcionario)-->
         <div class="opcoes">
             <a href="1"><div>Meus Dados</div></a>
             <a href="3"><div>Listar Livros</div></a>
@@ -41,7 +41,7 @@ $conn = $conn->getConnection();
         <h1>Meus Dados</h1>
         <form class="formulario" method="post" action="">
           <p>
-            <input id="nomeUsuario" name="nomeUsuario" required="required" type="text" placeholder="Nome de usu�rio"/>
+            <input id="nomeUsuario" name="nomeUsuario" required="required" type="text" placeholder="Nome de usuário"/>
           </p>
           <p>
             <input id="cpf" name="cpf" required="required" type="text" placeholder="CPF"/>
@@ -50,20 +50,20 @@ $conn = $conn->getConnection();
             <input id="email" name="email" required="required" type="email" placeholder="Email"/>
           </p>
           <p>
-            <input id="endereco" name="endereco" required="required" type="text" placeholder="Endere�o completo"/>
+            <input id="endereco" name="endereco" required="required" type="text" placeholder="Endereço completo"/>
           </p>
           <p>
-            <input id="senha" name="senha" required="required" type="password" placeholder="Senha de usu�rio"/>
+            <input id="senha" name="senha" required="required" type="password" placeholder="Senha de usuário"/>
           </p>
 
           <!--Div criada para usar o flex e deixar os botoes alterar e excluir lado a lado-->
           <div class="botoes">
             <p>
-              <!--Botao de Altera��o de dados do perfil-->
+              <!--Botao de Alteração de dados do perfil-->
               <input id="alterarDados" type="submit" value="Alterar Dados" /> 
             </p>
             <p>
-              <!--Botao de Exclus�o de perfil-->
+              <!--Botao de Exclusão de perfil-->
               <input id="excluirPerfil" type="submit" value="Excluir Perfil" /> 
             </p>
           </div>
@@ -72,7 +72,7 @@ $conn = $conn->getConnection();
     </section>
   </div>
 
-  <!--Rodap� da pagina-->
+  <!--Rodapé da pagina-->
   <footer>.</footer>
 </body>
 </html>
