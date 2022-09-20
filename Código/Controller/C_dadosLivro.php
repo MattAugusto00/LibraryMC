@@ -6,10 +6,13 @@ include_once '..\Persistence\LivroDAO.php';
 $cod = $_GET['cod'];
 
 $conn = new Connection();
+$conn = $conn->getConnection();
 
 $livroDAO = new LivroDAO();
 
-$livroDAO->consultaCod($conn, $cod);
+$consulta = $livroDAO->consultaCod($conn, $cod);
+
+$dados = $consulta->fetch_assoc();
 
 ?>
 
@@ -48,21 +51,24 @@ $livroDAO->consultaCod($conn, $cod);
       </div>
       <div class="opcaoEscolhida">
         <h1>Alterar Livro</h1>
-        <form class="formulario" method="post" action="../../Controller/cadastrarLivro.php">
+        <form class="formulario" method="post" action="C_alterarLivro.php">
           <p>
-            <input id="titulo" name="titulo" required="required" type="text" placeholder="Título do livro"/>
+            <input id="id" name="id" type="hidden" value="<?= $dados['id']?>" />
           </p>
           <p>
-            <input id="autor" name="autor" required="required" type="text" placeholder="Autor"/>
+            <input id="titulo" name="titulo" required="required" type="text" placeholder="Título do livro" value= "<?= $dados['titulo'] ?>" />
           </p>
           <p>
-            <input id="editora" name="editora" required="required" type="text" placeholder="Editora"/>
+              <input id="autor" name="autor" required="required" type="text" placeholder="Autor" value="<?= $dados['autor'] ?>" />
           </p>
           <p>
-            <input id="ano" name="ano" required="required" type="text" placeholder="Ano"/>
+              <input id="editora" name="editora" required="required" type="text" placeholder="Editora" value="<?= $dados['editora'] ?>" />
           </p>
           <p>
-            <input id="genero" name="genero" required="required" type="text" placeholder="Gênero"/>
+              <input id="ano" name="ano" required="required" type="text" placeholder="Ano" value="<?= $dados['ano'] ?>" />
+          </p>
+          <p>
+              <input id="genero" name="genero" required="required" type="text" placeholder="Gênero" value="<?= $dados['genero'] ?>" />
           </p>
 
           <!--Div criada para usar o flex e deixar os botoes alterar e excluir lado a lado-->
