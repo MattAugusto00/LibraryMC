@@ -26,7 +26,7 @@ $res = $livroDAO->consultar($conn);
     <!--Cabeçalho-->
     <header>.</header>
 
-    <!--Se�ao nao tava descendo por motivos que nao sei, logo criei para deixar a se�ao no meio da pagina rsrs-->
+    <!--Seçao nao tava descendo por motivos que nao sei, logo criei para deixar a seçao no meio da pagina rsrs-->
     <div class="moveSecao">
         <!--Dentro da section terao 2 Divisoes. A primeira para o formulario do Estudante, a segunda para o formulario do Funcionario-->
         <!--Coloquei as 2 divisoes dentro da mesma section para facilitar no alinhamento delas com uso do flexbox no CSS-->
@@ -82,15 +82,15 @@ $res = $livroDAO->consultar($conn);
                     <!--Div criada para usar o flex e deixar os botoes alterar e excluir lado a lado-->
                     <div class="botoes">
                         <p>
-                            <!--Botao de Altera��o de dados do perfil-->
+                            <!--Botao de Alteração de dados do perfil-->
                             <input id="exibirInfoLivro" type="submit" value="Exibir Informações do Livro" />
                         </p>
                         <p>
-                            <!--Botao de Altera��o de dados do perfil-->
+                            <!--Botao de Alteração de dados do perfil-->
                             <input id="visualizarListaEspera" type="submit" value="Visualizar Lista de Espera" />
                         </p>
                         <p>
-                            <!--Botao de Exclus�o de perfil-->
+                            <!--Botao de Exclusão de perfil-->
                             <input id="reservarLivro" type="submit" value="Reservar Livro" />
                         </p>
                     </div>
@@ -99,7 +99,7 @@ $res = $livroDAO->consultar($conn);
         </section>
     </div>
 
-    <!--Rodap� da pagina-->
+    <!--Rodapé da pagina-->
     <footer>.</footer>
 </body>
 </html>
