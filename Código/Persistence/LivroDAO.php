@@ -54,6 +54,19 @@ class LivroDAO {
                  location.href='C_dadosLivro.php' </script>";
         }
     }
+
+    function excluir($conn, $id){
+        $sql = "DELETE FROM livro WHERE `livro`.`id` = ".$id;
+
+        if ($conn->query($sql) == TRUE){
+            echo "<script>alert('Livro excluído com sucesso!!!');
+                 location.href='C_listarLivrosFuncionario.php' </script>";
+        }
+        else {
+            echo "<script>alert('Erro na exclusão!!!');
+                 location.href='C_listarLivrosFuncionario.php' </script>";
+        }
+    }
 }
 
 ?>
