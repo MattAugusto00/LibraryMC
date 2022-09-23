@@ -1,0 +1,3 @@
+Tudo que estiver relacionado a interface. Por exemplo, o formulário que o cliente interagir estará nesta pasta.
+
+Ex: CadastroCliente.html, ConsultarCliente.html, etc...
