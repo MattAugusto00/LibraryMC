@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Tempo de geração: 20-Set-2022 às 23:01
+-- Tempo de geração: 23-Set-2022 às 03:51
 -- Versão do servidor: 10.4.24-MariaDB
 -- versão do PHP: 7.4.29
 
@@ -54,8 +54,7 @@ CREATE TABLE `emprestimo` (
 --
 
 INSERT INTO `emprestimo` (`id`, `id_estudante`, `id_livro`, `dataInicial`, `dataLimite`) VALUES
-(4, 11, 3, '2022-09-20', '2022-09-22'),
-(5, 11, 3, '2022-09-20', '2022-09-22');
+(26, 40, 3, '2022-09-22', '2022-09-29');
 
 -- --------------------------------------------------------
 
@@ -79,7 +78,9 @@ CREATE TABLE `livro` (
 
 INSERT INTO `livro` (`id`, `titulo`, `autor`, `editora`, `ano`, `genero`, `situacao`) VALUES
 (3, 'A casa amarela', 'João', 'Moderna', '2010', 'Romance', 'e'),
-(5, 'Java - Orientação a Objeto', 'Marcos Silva', 'Oracle', '1980', 'Tecnologia', 'e');
+(6, 'Lagoa Azul', 'Mateus', 'Carlos Magus', '2022', 'Comedia', 'd'),
+(10, 'Livro', 'Autor', 'Editora', 'Ano', 'Gênero', 'd'),
+(12, 'Java ', 'João', 'Oracle', '1994', 'Tecnologia', 'd');
 
 -- --------------------------------------------------------
 
@@ -116,8 +117,18 @@ CREATE TABLE `usuario` (
 --
 
 INSERT INTO `usuario` (`id`, `nome`, `cpf`, `endereco`, `email`, `dataNasc`, `tipo`, `senha`) VALUES
-(11, 'mateus', '12345678910', 'Rua Haland Bruyne', 'mateus@email.com', '2022-09-01', 'e', '1234'),
-(29, 'Carlos', '1234567', 'Rua Dr Francisco Sales', 'carlos@email.com', '1994-04-21', 'f', 'senha123');
+(11, 'mateus', '12345678910', 'Rua Haland Bruyne', 'mateu@email.com', '2022-09-01', 'e', '1234'),
+(29, 'Carlos', '1234567', 'Rua Dr Francisco Sales', 'carlos@email.com', '1994-04-21', 'f', 'senha123'),
+(30, 'Josep Meazza', '1111', 'Rua Haland Bruyne', 'josepmeazza@asd', '1111-11-11', 'e', '123'),
+(34, 'teste', '123', 'testes', 'testeemail@teste.com', '2022-09-22', 'e', 'teste'),
+(35, 'teste', '4321', 'teste', 'teste@teste', '2022-09-08', 'e', 'teste'),
+(36, 'teste', '1', 'teste', 'teste@test', '2022-09-19', 'e', 'teste'),
+(37, 'testeid', '12', 'testesstes', 'tst@test.com', '2022-09-23', 'f', 'eafdaf'),
+(39, 'testando alterar', '98', 'testesstes', '0998@teste', '2022-09-01', 'e', 'naoseisenha'),
+(40, 'Carlos', '578', 'juninhodasilvajunior', 'email@email.ocm', '2022-09-03', 'f', '123456'),
+(41, 'teste', '1234', 'testesstes', 'tes@tes', '2022-09-23', 'e', 'teste'),
+(43, 'gt', 'gt', 'gt', 'gt@email.com', '2022-09-02', 'e', 'gtgt'),
+(44, 'asdfadfd', 'fdsasd', 'testesstes', 'sdfafasfs', '2022-09-10', 'f', 'asdfdsas');
 
 --
 -- Índices para tabelas despejadas
@@ -134,14 +145,15 @@ ALTER TABLE `devolucao`
 --
 ALTER TABLE `emprestimo`
   ADD PRIMARY KEY (`id`),
-  ADD KEY `fk_livro` (`id_livro`),
+  ADD UNIQUE KEY `id_livro` (`id_livro`),
   ADD KEY `fk_estudante` (`id_estudante`);
 
 --
 -- Índices para tabela `livro`
 --
 ALTER TABLE `livro`
-  ADD PRIMARY KEY (`id`);
+  ADD PRIMARY KEY (`id`),
+  ADD UNIQUE KEY `titulo` (`titulo`);
 
 --
 -- Índices para tabela `reserva`
@@ -171,13 +183,13 @@ ALTER TABLE `devolucao`
 -- AUTO_INCREMENT de tabela `emprestimo`
 --
 ALTER TABLE `emprestimo`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=6;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=28;
 
 --
 -- AUTO_INCREMENT de tabela `livro`
 --
 ALTER TABLE `livro`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=6;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=24;
 
 --
 -- AUTO_INCREMENT de tabela `reserva`
@@ -189,7 +201,7 @@ ALTER TABLE `reserva`
 -- AUTO_INCREMENT de tabela `usuario`
 --
 ALTER TABLE `usuario`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=30;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=45;
 
 --
 -- Restrições para despejos de tabelas
